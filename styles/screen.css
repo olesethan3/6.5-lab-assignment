@@ -1,19 +1,35 @@
 :root{
     --font: Arial, Helvetica, sans-serif;
+    --border: solid;
+    --center: auto;
+    --spacing: 10%;
 }
 
 body{
     font-family: var(--font);
     text-align: center;
+    background-color: #1D1E18;
 }
 
 h1{
-    border-style: solid;
+    border-style: var(--border);
     display: inline-block;
+    margin-top: var(--spacing);
+    background-color: #FFFFFC;
 }
 
 button{
     display: block;
-    margin: auto;
+    margin: var(--center);
     height: 50px;
+}
+
+div{
+    border-style: var(--border);
+    border-color: dimgrey;
+    width: var(--spacing);
+    padding: 30px 30px;
+    margin: var(--center);
+    margin-top: 100px;
+    background-color: #BEB7A4;
 }
